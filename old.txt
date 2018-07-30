@@ -1,26 +1,26 @@
 Pseudo code
 
 1. Input n
-2. Input numare vector of values numarr[0], numarr[1]... numarr[n-1]
+2. Input numarr vector of values numarr[0], numarr[1]... numarr[n-1]
 3. if n > 0:
 	a. Set size = n
 	b. Set temp = 0
-	c. Set maxvalur = 0
+	c. Set maxvalue = 0
 	d. Set max = 0
 	e. Do the following n-1 times, i starts at 0:
 		  i. Set temp = numarr[i]
 		 ii. Set freqcount = 0
-		iii. Do the following n-1 times, j startr at i:
+		iii. Do the following n-1 times, j starts at i:
 			1. if numarr[i] == numarr[j]:
 				a. Add 1 to freqcount
 			2. Add 1 to j
-		 iv. if freqconnt > max:
+		 iv. if freqcount > max:
 			1. Set max = freqcount
 			2. Set maxvalue = temp
 		  v. Add 1 to i
 
 	f. if size == 1:
-		i. Ontput "None"
+		i. Output "None"
 	g. else:
 		i. if max == 1:
 			1. Output "None"
