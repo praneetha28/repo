@@ -1,7 +1,7 @@
 num = 10
 print("Hello!")
-while num > 0:
+for num in range(10,0,-2):
        print(num)
-       num-= 2
+       
 
        
