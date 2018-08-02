@@ -1,5 +1,5 @@
 "' #enter the string'"
-S = input("enter string:")
+S = input()
 COUNT = 0
 L = int(len(S))
 i = 0
@@ -12,4 +12,4 @@ while j <= L:
     i = i+1
     j = j+1
 
-print('number of times bob occurs is:', COUNT)
+print(COUNT)
