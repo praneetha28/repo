@@ -9,4 +9,4 @@ if SUM**3 != abs(NUM):
 else:
     if NUM < 0:
         SUM = - SUM
-    print( str(NUM) + ' is a perfect cube' )
+    print(str(NUM) + ' is a perfect cube')
