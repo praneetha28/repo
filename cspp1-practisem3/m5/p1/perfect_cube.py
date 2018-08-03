@@ -1,19 +1,12 @@
-# Write a python program to find if the given number is a perfect cube or not
-# using guess and check algorithm
+"'# enter the input'"
+NUM = int(input())
+SUM = 0
+while SUM**3 < abs(NUM):
+    SUM = SUM + 1
 
-# testcase 1
-# Input: 24389
-# Output: 24389 is a perfect cube
-
-# testcase 2
-# Input: 21950
-# Output: 21950 is not a perfect cube
-
-def main():
-	# input is captured in s
-	s = raw_input()
-	# watch out for the data type of value stored in s
-	# your code starts here
-
-if __name__== "__main__":
-	main()
+if SUM**3 != abs(NUM):
+    print(str(NUM) + 'is not a perfect cube')
+else:
+    if NUM < 0:
+        SUM = - SUM
+    print(' cube root of ' + str(NUM) + ' is ' + str(SUM))
