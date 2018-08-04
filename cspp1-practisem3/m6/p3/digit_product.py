@@ -10,3 +10,4 @@ else:
         N = int(abs(N)/10)
         SUM = -SUM
     print(SUM)
+    
