@@ -9,7 +9,7 @@ for i in range(2, N+1):
         print('Fizz')
         print('Buzz')
     elif i%5 == 0:
-        print('Buzz ')
+        print('Buzz')
     elif i%3 == 0:
         print('Fizz')
     else:
