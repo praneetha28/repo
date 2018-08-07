@@ -1,25 +1,24 @@
-# Exercise: Assignment-1
-# Write a Python function, factorial(n), that takes in one number and returns the factorial of given number.
+"'# Exercise: Assignment-1'"
+# Write a Python function, factorial(n),
 
-# This function takes in one number and returns one number.
-
-
-def factorial(n):
+def factorial(num):
     '''
     n is positive Integer
 
     returns: a positive integer, the factorial of n.
     '''
-    if n == 0:
+    if num == 0:
         return 1
-    else:
-        return n * factorial(n-1)
-    
-
+    return num * factorial(num-1)
 
 def main():
-    a = input()
-    print(factorial(int(a)))    
+    '''
+    n is positive Integer
 
-if __name__== "__main__":
+    returns: a positive integer, the factorial of n.
+    '''
+    a_n = input()
+    print(factorial(int(a_n)))
+
+if __name__ == "__main__":
     main()
