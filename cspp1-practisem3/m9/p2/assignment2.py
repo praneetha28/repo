@@ -3,13 +3,13 @@ def get_guessed_word(secret_word, letters_guessed):
     '''
     secret_word: string, the word the user is guessing
     '''
-    str = ''
+    s_t = ''
     for char in secret_word:
         if char in letters_guessed:
-            str = str + char
+            s_t = s_t + char
         else:
-            str = str +'_'
-    return str
+            s_t = s_t +'_'
+    return s_t
 
 def main():
     '''
