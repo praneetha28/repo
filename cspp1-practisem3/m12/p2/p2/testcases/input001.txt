@@ -1,0 +1,7 @@
+{'John': ['Bryant', 'Debra', 'Walter'], 'Bryant': ['Olive', 'Ollie', 'Freda', 'Mercedes'], 'Mercedes': ['Walter', 'Robin', 'Bryant'], 'Olive': ['John', 'Ollie'], 'Debra': ['Walter', 'Levi', 'Jennie', 'Robin'], 'Walter': ['John', 'Levi', 'Bryant'], 'Levi': ['Ollie', 'John', 'Walter'], 'Ollie': ['Mercedes', 'Freda', 'Bryant'], 'Jennie': ['Levi', 'John', 'Freda', 'Robin'], 'Robin': ['Ollie'], 'Freda': ['Olive', 'John', 'Debra']}
+5
+follow John Olive
+follow Deepak Murthy
+unfollow Mercedes Walter
+delete Ollie
+delete Freda

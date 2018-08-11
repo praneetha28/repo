@@ -1,0 +1,12 @@
+10
+u 3
+r 3
+t 3
+w 3
+i 3
+o 3
+q 3
+y 3
+p 3
+e 3
+typewriter

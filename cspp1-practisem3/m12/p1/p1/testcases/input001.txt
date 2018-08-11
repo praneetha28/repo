@@ -1,0 +1,12 @@
+11
+John follows Bryant,Debra,Walter
+Bryant follows Olive,Ollie,Freda,Mercedes
+Mercedes follows Walter,Robin,Bryant
+Olive follows John,Ollie
+Debra follows Walter,Levi,Jennie,Robin
+Walter follows John,Levi,Bryant
+Levi follows Ollie,John,Walter
+Ollie follows Mercedes,Freda,Bryant
+Jennie follows Levi,John,Freda,Robin
+Robin follows Ollie
+Freda follows Olive,John,Debra

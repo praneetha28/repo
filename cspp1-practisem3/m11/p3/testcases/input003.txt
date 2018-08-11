@@ -1,0 +1,8 @@
+hammer
+5
+a 1
+m 2
+h 1
+e 1
+r 1
+require ham her mehr hammer

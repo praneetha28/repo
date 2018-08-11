@@ -1,0 +1,8 @@
+6
+c 2
+t 2
+a 2
+r 2
+p 3
+l 2
+claptrap

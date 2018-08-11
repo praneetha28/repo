@@ -1,0 +1,11 @@
+chayote
+8
+y 1
+z 1
+o 2
+t 2
+c 2
+a 1
+h 1
+u 2
+red chayote blue green
