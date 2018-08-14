@@ -33,8 +33,9 @@ def create_social_network(data):
     '''
     string_dict = {}
     for i in data:
-        import re
-        res = re.split('follows |\n', data)
+        res = data.split('follows')
+        list1 = res.split('\n')
+        print(out)
         if res[0] not in string_dict:
             string_dict[res[0]] = [res[1]]
         elif res[1] not in string_dict[res[0]]:

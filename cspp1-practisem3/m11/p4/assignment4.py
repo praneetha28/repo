@@ -11,7 +11,7 @@ def calculateHandlen(hand):
     """
     sum1 = 0
     for letters in hand:
-    	sum1 = sum1 + hand[letters]
+    	sum1 += sum(hand[letters])
     return sum1
 
 def main():
