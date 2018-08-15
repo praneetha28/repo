@@ -59,7 +59,7 @@ def three_of_a_kind(hand):
 	for h in hand:
 		l1.append(card_values[h[0]])
 	l1.sort()
-	for i in range(0, len(l1)-1):
+	for i in range(0, len(l1)-2):
 		if l1[i] == l1[i+1] == l1[i+2]:
 			return True
 	return False
