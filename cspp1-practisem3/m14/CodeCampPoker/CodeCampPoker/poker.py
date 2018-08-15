@@ -70,7 +70,7 @@ def two_pair(hand):
 	for h in hand:
 		l2.append(card_values[h[0]])
 	l2.sort()
-	for i in range(0, len(l2)-1):
+	for i in range(0, len(l2)-3):
 		if l2[i] == l2[i+1] and l2[i+2] == l2[i+3]:
 			return True
 	return False
