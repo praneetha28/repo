@@ -82,7 +82,7 @@ def one_pair(hand):
 		l3.append(card_values[h[0]])
 	l3.sort()
 	for i in range(0,len(l3)-1):
-		if(l3[i]) ==(l3[i+1]):
+		if(l3[i]) == (l3[i+1]):
 			return True
 	return False
 def full_house(hand):
@@ -123,7 +123,7 @@ def hand_rank(hand):
 		return 7
 	elif four_of_a_kind(hand):
 		return 6
-	elif full_house(hand):
+	elif three_of_a_kind(hand) and one_pair(hand):
 		return 5
 	elif is_flush(hand):
 		return 4
