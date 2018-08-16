@@ -15,7 +15,6 @@ def is_straight(ranks):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
-    print(ranks)
     return len(set(ranks)) == 5 and (max(ranks)-min(ranks) == 4)
 
 
