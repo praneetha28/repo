@@ -101,8 +101,13 @@ def high_card(hand):
     l_5 = []
     for i in hand:
         l_5.append(CARD_VALUES[i[0]])
-    l_5.sort()
-    print(l_5)
+    l = max(l_5)
+    d[l] = hands
+    list2 = list(d.values())
+    if list2 = HANDS:
+        hand = d[max(d.keys())]
+        return True
+    return False
 
 
 
