@@ -43,6 +43,7 @@ def kind(ranks, n_1):
     return 0
 
 def two_pair(ranks):
+    '''for two pairs'''
     one = kind(ranks, 2)
     two = kind(sorted(ranks), 2)
     if one and two:
