@@ -102,12 +102,9 @@ def high_card(hand):
     for i in hand:
         l_5.append(CARD_VALUES[i[0]])
     l = max(l_5)
-    d[l] = hands
-    list2 = list(d.values())
-    if list2 == HANDS:
-        hand = d[max(d.keys())]
-        return True
-    return False
+    d[l] = hand
+    return max(d.keys())
+
 
 def hand_rank(hand):
     '''
@@ -118,20 +115,22 @@ def hand_rank(hand):
         or a flush or a straight flush.
     '''
     if is_straight(hand) and is_flush(hand):
-        return 8
+        return 9
     elif four_of_a_kind(hand):
-        return 7
+        return 8
     elif three_of_a_kind(hand) and one_pair(hand):
-        return 6
+        return 7
     elif is_flush(hand):
-        return 5
+        return 6
     elif is_straight(hand):
-        return 4
+        return 5
     elif three_of_a_kind(hand):
-        return 3
+        return 4
     elif two_pair(hand):
-        return 2
+        return 3
     elif one_pair(hand):
+        return 2
+    elif hand_rank(hand):
         return 1
     else:
         return 0
