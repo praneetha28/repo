@@ -96,6 +96,16 @@ def full_house(hand):
             return True
     return False
 
+def high_card(hand):
+    '''high card'''
+    l_5 = []
+    for i in hand:
+        l_5.append(CARD_VALUES[i[0]])
+    l_5.sort()
+    print(l_5)
+
+
+
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
@@ -105,20 +115,22 @@ def hand_rank(hand):
         or a flush or a straight flush.
     '''
     if is_straight(hand) and is_flush(hand):
-        return 8
+        return 9
     elif four_of_a_kind(hand):
-        return 7
+        return 8
     elif three_of_a_kind(hand) and one_pair(hand):
-        return 6
+        return 7
     elif is_flush(hand):
-        return 5
+        return 6
     elif is_straight(hand):
-        return 4
+        return 5
     elif three_of_a_kind(hand):
-        return 3
+        return 4
     elif two_pair(hand):
-        return 2
+        return 3
     elif one_pair(hand):
+        return 2
+    elif high_card(hand):
         return 1
     else:
         return 0
