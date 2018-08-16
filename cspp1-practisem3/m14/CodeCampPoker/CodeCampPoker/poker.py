@@ -71,7 +71,7 @@ def hand_rank(hand):
 		return (4,ranks)
 	if kind(ranks, 3):
 		return (3,kind(ranks,3),ranks)
-	if two_pair(ranks, 2):
+	if two_pair(ranks):
 		return (2, two_pair(ranks),ranks) 
 	if kind(ranks, 2):
 		return (1,kind(ranks,2),ranks)
