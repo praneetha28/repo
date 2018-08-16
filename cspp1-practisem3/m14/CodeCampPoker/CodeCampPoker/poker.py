@@ -42,10 +42,10 @@ def kind(ranks, n):
 
 def two_pair(ranks):
 	one = kind(ranks,2)
-	two = kind(sorted(ranks,2))
+	two = kind(sorted(ranks),2)
 	if one and two:
 		return (one,two)
-	return 
+	return None
 
 
 
