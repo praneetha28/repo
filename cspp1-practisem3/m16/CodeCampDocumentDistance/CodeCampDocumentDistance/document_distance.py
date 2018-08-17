@@ -2,7 +2,7 @@
     Document Distance - A detailed description is given in the PDF
 '''
 import math
-stopwords = "stopwords.txt"
+STOP_WORDS = "stopwords.txt"
 def similarity(dict1, dict2):
     '''
         Compute the document distance as given in the PDF
@@ -12,17 +12,17 @@ def similarity(dict1, dict2):
     list3 = list1 + list2
     dict3 = {}
     for word in list3:
-    	if word not in load_stopwords(stopwords).keys():
-    		dict3[word] = (dict1.count(word), dict2.count(word))
+        if word not in load_stopwords(STOP_WORDS).keys():
+            dict3[word] = (dict1.count(word), dict2.count(word))
     num = 0
     sum0 = 0
     sum1 = 0
     for i in dict3:
-    	num += dict3[i][0]*dict3[i][1]
-    	sum0 += dict3[i][0]**2
-    	sum1 += dict3[i][1]**2
-    	denom = math.sqrt(sum0)*math.sqrt(sum1)
-    return round(num//denom, 1)
+        num += dict3[i][0]*dict3[i][1]
+        sum0 += dict3[i][0]**2
+        sum1 += dict3[i][1]**2
+        denom = math.sqrt(sum0)*math.sqrt(sum1)
+    return round(num/denom, 1)
 
 
 def load_stopwords(filename):
