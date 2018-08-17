@@ -4,12 +4,14 @@ import re
 import math
 FILE = "stopwords.txt"
 def cleanup_words(input1):
+    '''removing special characters'''
     reg = re.compile('[^a-z]')
     input1 = input1.lower()
-    input1 = [reg.sub('',w.strip())for w in input1.split(' ')]
+    input1 = [reg.sub('', w.strip())for w in input1.split(' ')]
     return input1
 
-def remove_wordsdict(input1,input2):
+def remove_wordsdict(input1, input2):
+    '''creating dictionary'''
     list3 = cleanup_words(input1) + cleanup_words(input2)
     dic = {}
     for word in list3:
@@ -21,18 +23,18 @@ def similarity(dict1, dict2):
     '''
         Compute the document distance as given in the PDF
     '''
-    d1 = {}
-    d1 = remove_wordsdict(dict1,dict2)
+    d_1 = {}
+    d_1 = remove_wordsdict(dict1, dict2)
     num = 0
     denom = 0
     sum0 = 0
     sum1 = 0
-    for d1 in d1.values():
-        num = num + (d1[0]*d1[1])
-        sum0 = sum0 + (d1[0]**2)
-        sum1 = sum1 + (d1[1]**2)
+    for d_1 in d_1.values():
+        num = num + (d_1[0]*d_1[1])
+        sum0 = sum0 + (d_1[0]**2)
+        sum1 = sum1 + (d_1[1]**2)
     denom = math.sqrt(sum0) * math.sqrt(sum1)
-    return (num/denom)
+    return num/denom
 
 
 def load_stopwords(filename):
