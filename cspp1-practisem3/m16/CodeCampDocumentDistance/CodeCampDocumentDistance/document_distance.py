@@ -1,41 +1,38 @@
 '''
-    Document Distance - A detailed description is given in the PDF
-'''
+    Document Distance - A detailed description is given in the PDF'''
+import re
 import math
-STOP_WORDS = "stopwords.txt"
+FILE = "stopwords.txt"
+def cleanup_words(input1):
+    reg = re.compile('[^a-z]')
+    input1 = input1.lower()
+    input1 = [reg.sub('',w.strip())for w in input1.split(' ')]
+    return input1
+
+def remove_wordsdict(input1,input2):
+    list3 = cleanup_words(input1) + cleanup_words(input2)
+    dic = {}
+    for word in list3:
+        if word not in load_stopwords(FILE).keys() and len(word) > 0:
+            dic[word] = (cleanup_words(input1).count(word), cleanup_words(input2).count(word))
+    return dic
+
 def similarity(dict1, dict2):
     '''
         Compute the document distance as given in the PDF
     '''
-    lis1 = ''
-    lis2 = ''
-    for i in dict1:
-        for j in i:
-            if j not in '!@#$%^&*()_+-=,.?1234567890':
-                if j not in "'":
-                    lis1 = lis1 + j
-    for i in dict2:
-        for j in i:
-            if j not in '!@#$%^&*()_+-=,.?1234567890':
-                if j not in "'":
-                    lis2 = lis2 + j
-
-    lis1 = lis1.split()
-    lis2 = lis2.split()
-    list3 = lis1 + lis2
-    dict3 = {}
-    for word in list3:
-        if word not in load_stopwords(STOP_WORDS).keys():
-            dict3[word] = (lis1.count(word), lis2.count(word))
+    d1 = {}
+    d1 = remove_wordsdict(dict1,dict2)
     num = 0
+    denom = 0
     sum0 = 0
     sum1 = 0
-    for i in dict3:
-        num += (dict3[i][0]*dict3[i][1])
-        sum0 += dict3[i][0]**2
-        sum1 += dict3[i][1]**2
+    for d1 in d1.values():
+        num = num + (d1[0]*d1[1])
+        sum0 = sum0 + (d1[0]**2)
+        sum1 = sum1 + (d1[1]**2)
     denom = math.sqrt(sum0) * math.sqrt(sum1)
-    return num / denom
+    return (num/denom)
 
 
 def load_stopwords(filename):
