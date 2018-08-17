@@ -7,14 +7,19 @@ def similarity(dict1, dict2):
     '''
         Compute the document distance as given in the PDF
     '''
-    lis1 = ' '
-    lis2 = ' '
-    for i in dict1 and dict2:
+    lis1 = ''
+    lis2 = ''
+    for i in dict1:
         for j in i:
-            if j in '!@#$%^&*()_-,.?+=0123456789':
+            if j not in '!@#$%^&*()_-+=,.?0123456789':
                 if j not in "'":
                     lis1 = lis1 + j
+    for i in dict2:
+        for j in i:
+            if j not in '!@#$%^&*()_-+=,.?0123456789':
+                if j not in "'":
                     lis2 = lis2 + j
+
     list1 = lis1.split(' ')
     list2 = lis2.split(' ')
     list3 = list1 + list2
@@ -29,8 +34,8 @@ def similarity(dict1, dict2):
         num = num + dict3[i][0]*dict3[i][1]
         sum0 = sum0 + dict3[i][0]**2
         sum1 = sum1 + dict3[i][1]**2
-        denom = math.sqrt(sum0) * math.sqrt(sum1)
-    return num/denom
+    denom = math.sqrt(sum0) * math.sqrt(sum1)
+    return num / denom
 
 
 def load_stopwords(filename):
