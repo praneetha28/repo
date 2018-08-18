@@ -42,9 +42,9 @@ def word_list(text):
         return a list of words
     '''
     reg = re.compile('[^a-z]')
-    input1 = [reg.sub(" ",input1.strip())for input1 in text.lower().split(' ')]
-    remove_words = load_stopwords(FILE)
-    input1 = [i for i in input1 if i not in remove_words]
+    input1 = [reg.sub(" ", input1.strip())for input1 in text.lower().split(' ')]
+    stop_words = load_stopwords(FILE)
+    input1 = [i for i in input1 if i not in stop_words]
     return input1
 
 def build_search_index(docs):
@@ -57,17 +57,15 @@ def build_search_index(docs):
         # add or update the words of the doc to the search index
 
     # return search index
-    dict1={}
-    word_1 = []
+    dict1 = {}
+    word_li = []
     for line in docs:
-        word_1.append(word_list(line))
-    for w_1 in word_1:
+        word_li.append(word_list(line))
+    for w_1 in word_li:
         for word in w_1:
             if word not in dict1.keys():
-                
-                dict1[word] = [(i_, word_new.count(word)) for i_, word_new in enumerate(word_1) if word in word_new ]
+                dict1[word] = [(j_1, word_new.count(word)) for j_1, word_new in enumerate(word_li) if word in word_new]
     return dict1
-            
 
 # helper function to print the search index
 # use this to verify how the search index looks
