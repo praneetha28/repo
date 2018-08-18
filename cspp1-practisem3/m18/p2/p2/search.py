@@ -40,11 +40,11 @@ def search(search_index, query):
     input1 = query.lower()
     list1 = input1.split(" ")
     d_id = set()
-    for i in list1:
-        if i in search_index:
-            target_1 = [search_index[i]]
-            for i in target_1:
-                d_id.add[i[0]]
+    for word in list1:
+        if word in search_index:
+            target_1 = search_index[word]
+            for word in target_1:
+                d_id.add[word[0]]
     return d_id 
 
 def process_queries(search_index, queries):
