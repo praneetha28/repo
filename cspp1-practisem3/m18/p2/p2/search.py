@@ -44,7 +44,7 @@ def search(search_index, query):
         if word in search_index:
             target_1 = search_index[word]
             for word in target_1:
-                d_id.add[word[0]]
+                d_id.add(word[0])
     return d_id 
 
 def process_queries(search_index, queries):
