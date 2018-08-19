@@ -64,7 +64,9 @@ def build_search_index(docs):
     for w_1 in word_li:
         for word in w_1:
             if word not in dict1.keys():
-                dict1[word] = [(j_1, word_new.count(word)) for j_1, word_new in enumerate(word_li) if word in word_new]
+                for j_1, word1 in enumerate(word_li):
+                    if word in word1:
+                        dict1[word] = (j_1, word_new.count(word))
     return dict1
 
 # helper function to print the search index
