@@ -1,5 +1,5 @@
 num = 10
-print("Hello!")
+print("Helo!")
 for num in range(10,0,-2):
        print(num)
        
