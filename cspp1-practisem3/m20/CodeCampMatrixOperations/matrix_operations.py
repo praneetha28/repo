@@ -56,8 +56,8 @@ def main():
     if read_matrix(matrix2,row1):
         exit
     
-    #print(add_matrix(matrix1, matrix2))
-    #print(mult_matrix(matrix1, matrix2))
+    print(add_matrix(matrix1, matrix2))
+    print(mult_matrix(matrix1, matrix2))
 
 
    
