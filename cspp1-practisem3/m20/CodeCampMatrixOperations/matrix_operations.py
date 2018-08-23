@@ -63,7 +63,7 @@ def main():
     row1=list(map(int,input().split(',')))
     matrix2=read_matrix(row1)
 
-    if matrix1 != None and matrix2 != None:
+    if matrix1 == None and matrix2 == None:
         print(add_matrix(matrix1, matrix2))
         print(mult_matrix(matrix1, matrix2))
 
