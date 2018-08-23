@@ -38,7 +38,7 @@ def add_matrix(m1, m2):
     
 
 
-def read_matrix(matrix,row):
+def read_matrix(row):
     '''
         read the matrix dimensions from input
         create a list of lists and read the numbers into it
@@ -46,6 +46,7 @@ def read_matrix(matrix,row):
         print an error message and return None
         error message should be "Error: Invalid input for the matrix"
     '''
+    matrix = []
     for i in range(row[0]):
         a= list(map(int,input().split(' ')))
         if len(a) == row[1]:
@@ -56,16 +57,10 @@ def read_matrix(matrix,row):
     
 def main():
     row=list(map(int,input().split(',')))
-    matrix1=[]
-    if read_matrix(matrix1,row):
-        exit(0)
-    
+    matrix1=read_matrix(row)
     row1=list(map(int,input().split(',')))
-    matrix2=[]
-    if read_matrix(matrix2,row1):
-        exit(0)
-    
-    if read_matrix(matrix1,row) and read_matrix(matrix2,row1) != None:
+    matrix2=read_matrix(row1)
+    if matrix1 != None and matrix2 != None:
         print(add_matrix(matrix1, matrix2))
         print(mult_matrix(matrix1, matrix2))
 
