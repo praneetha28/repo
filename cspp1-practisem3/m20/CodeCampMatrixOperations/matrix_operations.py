@@ -65,8 +65,9 @@ def main():
     if read_matrix(matrix2,row1):
         exit(0)
     
-    print(add_matrix(matrix1, matrix2))
-    print(mult_matrix(matrix1, matrix2))
+    if read_matrix(matrix1,row) and read_matrix(matrix2,row1) != None:
+        print(add_matrix(matrix1, matrix2))
+        print(mult_matrix(matrix1, matrix2))
 
 
    
