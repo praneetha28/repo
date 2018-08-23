@@ -6,12 +6,16 @@ def mult_matrix(m1, m2):
         and return None
         error message should be "Error: Matrix shapes invalid for mult"
     '''
-    res = [[0 for row in range(len(m1))] for col in range(len(m1[0]))]
-    for i in range(len(m1)):
-        for j in range(len(m1[0])):
-            for k in range(len(m2)):
-                res[i][j] += m1[i][k]*m2[k][j]
-    return res
+    if len(m1[0]) == len(m2) and len(m1[0]) == len(m2):
+        res = [[0 for row in range(len(m1))] for col in range(len(m2[1]))]
+        for i in range(len(m1)):
+            for j in range(len(m2[1])):
+                for k in range(len(m2)):
+                    res[i][j] += m1[i][k]*m2[k][j]
+        return res
+    print("Error: Matrix shapes invalid for mult")
+    return None
+    
 
 def add_matrix(m1, m2):
     '''
@@ -21,11 +25,16 @@ def add_matrix(m1, m2):
         and return None
         error message should be "Error: Matrix shapes invalid for addition"
     '''
-    res = [[0 for row in range(len(m1))] for col in range(len(m1[0]))]
-    for i in range(len(m1)):
-        for j in range(len(m1[0])):
-            res[i][j] = m1[i][j]+m2[i][j]
-    return res
+    if len(m1) == len(m2) and len(m1[0]) == len(m2[0]):
+        res = [[0 for row in range(len(m1[0]))] for col in range(len(m1))]
+        for i in range(len(m1)):
+            for j in range(len(m1[0])):
+                res[i][j] = m1[i][j] + m2[i][j]
+        return res
+    print("Error: Matrix shapes invalid for addition")
+    return None
+    
+    
     
 
 
@@ -38,9 +47,9 @@ def read_matrix(matrix,row):
         error message should be "Error: Invalid input for the matrix"
     '''
     for i in range(row[0]):
-        a= input().split(' ')
+        a= list(map(int,input().split(' ')))
         if len(a) == row[1]:
-            matrix.append(list(map(int, a)))
+            matrix.append(a)
         else:
             print('Error: Invalid input for the matrix')
             return None
@@ -49,12 +58,12 @@ def main():
     row=list(map(int,input().split(',')))
     matrix1=[]
     if read_matrix(matrix1,row):
-        exit
+        exit(0)
     
     row1=list(map(int,input().split(',')))
     matrix2=[]
     if read_matrix(matrix2,row1):
-        exit
+        exit(0)
     
     print(add_matrix(matrix1, matrix2))
     print(mult_matrix(matrix1, matrix2))
