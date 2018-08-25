@@ -1,7 +1,7 @@
 '''
     Sudoku is a logic-based, combinatorial number-placement puzzle.
     The objective is to fill a 9×9 sudoku with digits so that
-    each column, each row, and each of the nine 3×3 subgrids that compose the grid
+    each column, each row, and each of the nine 3×3 subsudokus that compose the grid
     contains all of the digits from 1 to 9.
 
     Complete the check_sudoku function to check if the given grid
@@ -13,36 +13,48 @@ def check_sudoku(sudoku):
         Your solution goes here. You may add other helper functions as needed.
         The function has to return True for a valid sudoku grid and false otherwise
     '''
-    length = 9
-    for row in range(length):
-        if row != length:
-            return False
-    for row in range(length):
-        for i in row:
-            if i > length:
-                return False
-    while length > 0:
-        for row in range(length):
-            for i in row:
-                if row.count(i) > 1:
-                    return False;
+    if len(sudoku) == 9:
+        numsinrow = 0
+        for i in range(9):
+            if len(sudoku[i]) == 9:
+                numsinrow += 1
+        if numsinrow == 9:
+            if checkrow(sudoku):
+                if checkcol(sudoku):
+                    return True
                 else:
-                    length -= 1
-    length = 9
-    eachRow = []
-    while length > 0:
-        for row in range(length):
-            eachRow.append(row[length-1])
-        for i in eachRow:
-            if i > length:
-                return False
-            elif eachRow.count(i) > 1:
-                return False
+                    return False
             else:
-                eachRow = []
-                length -= 1
-        return True
+                return False
+        else:
+            return False
+    else:
+        return False
 
+def checkrow(sudoku):
+    for i in range(9):
+        rowoccurence = [0,0,0,0,0,0,0,0,0,0]
+        for j in range(9):
+            rowoccurence[int(sudoku[i][j])] += 1
+        temprow = rowoccurence[1:10]
+        for q in range(9):
+            if temprow[q] == 1 or temprow[q] == 0:
+                continue
+            else:
+                return False
+    return True
+def checkcol(sudoku):
+    for num in range(9):
+        coloccurence = [0,0,0,0,0,0,0,0,0,0]
+        for i in range(9):
+            coloccurence[int(sudoku[i][num])] += 1
+        tempcol = coloccurence[1:10]
+        for q in range(9):
+            if tempcol[q] == 1 or tempcol[q] == 0:
+                continue
+            else:
+                return False
+    return True
 
         #ninrows = 0
         #for i in range(9):
