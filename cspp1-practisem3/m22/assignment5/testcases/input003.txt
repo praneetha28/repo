@@ -1,0 +1,1 @@
+{'James': 5, 'while': 3, 'John': 4, 'had': 11, 'a': 8, 'better': 2, 'effect': 1, 'on': 7, 'the': 1, 'teacher': 1}
