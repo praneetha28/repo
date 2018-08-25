@@ -1,0 +1,4 @@
+3
+Welcome to Week 4 Exam
+First Assignment
+Read input and print it out
