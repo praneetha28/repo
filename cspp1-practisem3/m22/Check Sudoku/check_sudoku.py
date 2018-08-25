@@ -14,16 +14,15 @@ def check_sudoku(sudoku):
         The function has to return True for a valid sudoku grid and false otherwise
     '''
     if len(sudoku) == 9:
-        numsinrow = 0
+        row = 0
         for i in range(9):
             if len(sudoku[i]) == 9:
-                numsinrow += 1
-        if numsinrow == 9:
+                row += 1
+        if row == 9:
             if checkrow(sudoku):
                 if checkcol(sudoku):
                     return True
-                else:
-                    return False
+                return False
             else:
                 return False
         else:
@@ -33,42 +32,26 @@ def check_sudoku(sudoku):
 
 def checkrow(sudoku):
     for i in range(9):
-        rowoccurence = [0,0,0,0,0,0,0,0,0,0]
+        rowlist = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         for j in range(9):
-            rowoccurence[int(sudoku[i][j])] += 1
-        temprow = rowoccurence[1:10]
+            rowlist[int(sudoku[i][j])] += 1
+        temprow = rowlist[1:10]
         for q in range(9):
             if temprow[q] == 1 or temprow[q] == 0:
                 continue
-            else:
-                return False
+            return False
     return True
 def checkcol(sudoku):
     for num in range(9):
-        coloccurence = [0,0,0,0,0,0,0,0,0,0]
+        rowlist1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         for i in range(9):
-            coloccurence[int(sudoku[i][num])] += 1
-        tempcol = coloccurence[1:10]
+            rowlist1[int(sudoku[i][num])] += 1
+        temprow1 = rowlist1[1:10]
         for q in range(9):
-            if tempcol[q] == 1 or tempcol[q] == 0:
+            if temprow1[q] == 1 or temprow1[q] == 0:
                 continue
-            else:
-                return False
+            return False
     return True
-
-        #ninrows = 0
-        #for i in range(9):
-         #   if len(sudoku[i]) == 9:
-          #      ninrows += 1
-        #if ninrows == 9:
-         #   for i in range(9):
-          #      row = [0,0,0,0,0,0,0,0,0]
-           #     for j in range(9):
-            #        row[int(sudoku[i][j])] += 1
-             #   temprow = row[1:10]
-                 
-
-    
 
 def main():
     '''
