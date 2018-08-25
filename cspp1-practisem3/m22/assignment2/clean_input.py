@@ -6,7 +6,7 @@ import re
 def clean_string(string):
     '''function to remove special characters'''
     input1 = string.lower()
-    input1 = re.sub('[^a-zA-Z]+', '', input1)
+    input1 = re.sub('[^a-zA-Z0-9]+', '', input1)
     return input1
 
 def main():
