@@ -5,7 +5,8 @@ each word
 import re
 def tokenize(string):
     '''token function'''
-    input1 = re.split(r'[^a-zA-Z]', string.strip())
+    input1 = re.split(r'[^a-zA-Z0-9]', string.strip())
+    print(input1)
     while '' in input1:
         input1.remove('')
     dict1 = {}
