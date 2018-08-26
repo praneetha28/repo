@@ -1,0 +1,1 @@
+(5, 'This is Inheritance assignment.')
