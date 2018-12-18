@@ -8,6 +8,8 @@ def how_many(aDict):
 
     returns: int, how many values are in the dictionary.
     '''
+    # for keys,values in aDict.items():
+    #     print(keys,":",values)
     value_list = []
     total = 0
     for value in aDict:

@@ -1,1 +1,3 @@
-print (" hello world ")
+def main():
+	array = int(input()).split(",")
+	print(array)

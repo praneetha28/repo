@@ -13,34 +13,17 @@ def create_social_network(data):
         Bryant follows Olive,Ollie,Freda,Mercedes
         Mercedes follows Walter,Robin,Bryant
         Olive follows John,Ollie
-
-        The string has multiple lines and each line represents one person
-        The first word of each line is the name of the person
-        The second word is follows that separates the person from the followers
-        After the second word is a list of people separated by ,
-
-        create_social_network function should split the string on lines
-        then extract the person and the followers by splitting each line
-        finally add the person and the followers to a dictionary and
-        return the dictionary
-
-        Caution: watch out for trailing spaces while splitting the string.
-        It may cause your test cases to fail although your output may be right
-
-        Error handling case:
-        Return a empty dictionary if the string format of the data is invalid
-        Empty dictionary is not None, it is a dictionary with no keys
     '''
     string_dict = {}
     for i in data:
         res = data.split("\n")
         res = res[:len(res)-1]
         for k,v in enumerate(res):
-        	res[k] = v.split("follows")
-        	if res[k][0] not in string_dict:
-            	string_dict[res[k][0]] = [res[k][1].split(',')]
-        	else:
-            	string_dict[res[i][0]].append(res[k][1].split(','))
+            res[k] = v.split("follows ")
+            if res[k][0] not in string_dict:
+                string_dict[res[k][0]] = res[k][1].split(',')
+            else:
+                string_dict[res[i][0]].append(res[k][1].split(','))
         return string_dict
     return string_dict
 
