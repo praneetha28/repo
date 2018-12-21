@@ -65,7 +65,7 @@ def checkcol(sudoku):
 
 def main():
     input1 = input()
-    grid=[['0' for x in range(9)]for y in range(9)]
+    grid = [['0' for x in range(9)]for y in range(9)]
     if len(input1) != 81:
         print("Invalid input")
     else:
