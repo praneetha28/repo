@@ -1,32 +1,19 @@
 ************* Module sudoku
-sudoku.py:2:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-sudoku.py:3:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-sudoku.py:4:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-sudoku.py:5:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-sudoku.py:8:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-sudoku.py:9:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-sudoku.py:10:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-sudoku.py:11:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-sudoku.py:14:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-sudoku.py:15:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-sudoku.py:16:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-sudoku.py:23:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-sudoku.py:26:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-sudoku.py:27:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-sudoku.py:28:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-sudoku.py:32:0: C0304: Final newline missing (missing-final-newline)
+sudoku.py:27:8: C0326: Exactly one space required around assignment
+    grid=[['0' for x in range(9)]for y in range(9)]
+        ^ (bad-whitespace)
+sudoku.py:43:0: C0304: Final newline missing (missing-final-newline)
 sudoku.py:1:0: C0111: Missing module docstring (missing-docstring)
+sudoku.py:1:0: C0103: Argument name "g" doesn't conform to snake_case naming style (invalid-name)
+sudoku.py:1:0: C0103: Argument name "r" doesn't conform to snake_case naming style (invalid-name)
+sudoku.py:1:0: C0103: Argument name "c" doesn't conform to snake_case naming style (invalid-name)
 sudoku.py:1:0: C0111: Missing function docstring (missing-docstring)
-sudoku.py:5:2: E0602: Undefined variable 'solveSudoku' (undefined-variable)
-sudoku.py:7:0: C0103: Function name "isFull" doesn't conform to snake_case naming style (invalid-name)
-sudoku.py:7:0: C0103: Argument name "li" doesn't conform to snake_case naming style (invalid-name)
-sudoku.py:7:0: C0111: Missing function docstring (missing-docstring)
-sudoku.py:8:2: R1703: The if statement can be replaced with 'return bool(test)' (simplifiable-if-statement)
-sudoku.py:8:2: R1705: Unnecessary "else" after "return" (no-else-return)
-sudoku.py:13:0: C0111: Missing function docstring (missing-docstring)
-sudoku.py:25:0: C0103: Function name "Grid" doesn't conform to snake_case naming style (invalid-name)
+sudoku.py:10:0: C0111: Missing function docstring (missing-docstring)
+sudoku.py:14:12: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
+sudoku.py:16:16: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
+sudoku.py:18:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
 sudoku.py:25:0: C0111: Missing function docstring (missing-docstring)
 
 --------------------------------------------------------------------
-Your code has been rated at -6.32/10 (previous run: -6.32/10, +0.00)
+Your code has been rated at 6.47/10 (previous run: -6.32/10, +12.79)
 

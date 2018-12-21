@@ -1,32 +1,43 @@
-def sudoku(list1):
-	if isFull(list1):
-		print("Given sudoku is solved")
-	else:
-		solveSudoku(list1)
+def create_set(g, r, c):
+    lis = set()
+    for i in range(9):
+        if g[r][i] != '0':
+            lis.add(g[r][i])
+        if g[i][c] != '0':
+            lis.add(g[i][c])
+    return lis
 
-def isFull(li):
-		if li.count('.') == 0:
-			return True
-		else:
-			return False
+def possibilities(mat):
+    for i in range(9):
+        for j in range(9):
+            res = ""
+            s = set()
+            if mat[i][j] == '0':
+                s = create_set(mat, i, j)
+                # print(s)
+            if len(s) != 0:
+                for each in "123456789":
+                    if each not in s:
+                        res += each
+                print(res)
+
 
 def main():
-	input1 = input()
-	if len(input1) != 81:
-		print("Invalid input")
-	# else:
-		# matrix = list(Grid(input1))
-		# grid = []
-		# for i in range(len(matrix)):
-		# 	grid.append(list(map(int, matrix[i])))
-		# print(grid)
-	sudoku(input1)
-
-def Grid(list3):
-	for i in range(0, len(list3), 9):
-		yield list3[i:i + 9]
-	return list3
-
+    input1 = input()
+    grid=[['0' for x in range(9)]for y in range(9)]
+    if len(input1) != 81:
+        print("Invalid input")
+    else:
+        k = 0
+        for i in range(9):
+            for j in range(9):
+                if input1[k] != '.':
+                    grid[i][j] = input1[k]
+                k += 1
+    # if k == 9:
+    #     checkSudoku(grid)
+    # else:
+        possibilities(grid)
 
 if __name__ == '__main__':
     main()
