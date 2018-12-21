@@ -21,7 +21,7 @@ def sub_grid(grid, row, col):
         return l
     if row >= 0 and row <= 2 and col >= 3 and col <= 5 :
         for i in range(0, 3):
-            for j in range(3, 5):
+            for j in range(3, 6):
                 l.append(grid[i][j])
         return l
     if row >= 3 and row <= 5 and col >= 3 and col <= 5 :
@@ -50,8 +50,6 @@ def sub_grid(grid, row, col):
                 l.append(grid[i][j])
         return l
 
-
-
 def create_set(g, row, col):
     lis= set()
     for i in range(9):
@@ -60,7 +58,8 @@ def create_set(g, row, col):
         if g[i][col] != '0':
             lis.add(g[i][col])
     for each in sub_grid(grid, row, col):
-        lis.add(each)
+        if each != '0':
+            lis.add(each)
     return lis
 
 def possibilities(g):

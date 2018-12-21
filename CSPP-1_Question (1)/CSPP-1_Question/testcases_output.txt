@@ -375,7 +375,7 @@ Your Output:
 12357
 13
 57
-16
+6
 46
 7
 23
@@ -428,7 +428,7 @@ Invalid input
 
 Your Output: 
 Traceback (most recent call last):
-  File "sudoko.py", line 90, in <module>
+  File "sudoko.py", line 89, in <module>
     if given_input[k] != '.':
 IndexError: string index out of range
 ----------------------------------------
@@ -581,7 +581,7 @@ Invalid input
 
 Your Output: 
 Traceback (most recent call last):
-  File "sudoko.py", line 90, in <module>
+  File "sudoko.py", line 89, in <module>
     if given_input[k] != '.':
 IndexError: string index out of range
 ----------------------------------------
@@ -653,8 +653,8 @@ Your Output:
 234
 2478
 12
-235
-345
+23
+34
 24
 13457
 247

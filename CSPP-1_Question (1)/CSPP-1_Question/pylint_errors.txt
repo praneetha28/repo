@@ -26,22 +26,22 @@ sudoko.py:42:55: C0326: No space allowed before :
 sudoko.py:47:55: C0326: No space allowed before :
     if row >= 6 and row <= 8 and col >= 6 and col <= 8 :
                                                        ^ (bad-whitespace)
-sudoko.py:56:7: C0326: Exactly one space required before assignment
+sudoko.py:54:7: C0326: Exactly one space required before assignment
     lis= set()
        ^ (bad-whitespace)
-sudoko.py:80:11: C0326: Exactly one space required around comparison
+sudoko.py:79:11: C0326: Exactly one space required around comparison
 if __name__=="__main__":
            ^^ (bad-whitespace)
-sudoko.py:83:8: C0326: Exactly one space required around assignment
+sudoko.py:82:8: C0326: Exactly one space required around assignment
     grid=[['0' for x in range(9)]for y in range(9)]
         ^ (bad-whitespace)
 sudoko.py:1:0: C0111: Missing module docstring (missing-docstring)
 sudoko.py:1:0: C0111: Missing function docstring (missing-docstring)
-sudoko.py:2:8: W0621: Redefining name 'i' from outer scope (line 88) (redefined-outer-name)
+sudoko.py:2:8: W0621: Redefining name 'i' from outer scope (line 87) (redefined-outer-name)
 sudoko.py:4:0: C0111: Missing function docstring (missing-docstring)
-sudoko.py:4:13: W0621: Redefining name 'grid' from outer scope (line 83) (redefined-outer-name)
-sudoko.py:7:12: W0621: Redefining name 'i' from outer scope (line 88) (redefined-outer-name)
-sudoko.py:8:16: W0621: Redefining name 'j' from outer scope (line 89) (redefined-outer-name)
+sudoko.py:4:13: W0621: Redefining name 'grid' from outer scope (line 82) (redefined-outer-name)
+sudoko.py:7:12: W0621: Redefining name 'i' from outer scope (line 87) (redefined-outer-name)
+sudoko.py:8:16: W0621: Redefining name 'j' from outer scope (line 88) (redefined-outer-name)
 sudoko.py:5:4: C0103: Variable name "l" doesn't conform to snake_case naming style (invalid-name)
 sudoko.py:6:7: R1716: Simplify chained comparison between the operands (chained-comparison)
 sudoko.py:12:7: R1716: Simplify chained comparison between the operands (chained-comparison)
@@ -55,19 +55,19 @@ sudoko.py:47:7: R1716: Simplify chained comparison between the operands (chained
 sudoko.py:4:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
 sudoko.py:4:0: R0911: Too many return statements (9/6) (too-many-return-statements)
 sudoko.py:4:0: R0912: Too many branches (27/12) (too-many-branches)
-sudoko.py:55:0: C0103: Argument name "g" doesn't conform to snake_case naming style (invalid-name)
-sudoko.py:55:0: C0111: Missing function docstring (missing-docstring)
-sudoko.py:57:8: W0621: Redefining name 'i' from outer scope (line 88) (redefined-outer-name)
-sudoko.py:66:0: C0103: Argument name "g" doesn't conform to snake_case naming style (invalid-name)
-sudoko.py:66:0: C0111: Missing function docstring (missing-docstring)
-sudoko.py:67:8: W0621: Redefining name 'i' from outer scope (line 88) (redefined-outer-name)
-sudoko.py:68:12: W0621: Redefining name 'j' from outer scope (line 89) (redefined-outer-name)
-sudoko.py:70:12: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
-sudoko.py:72:16: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
-sudoko.py:74:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
-sudoko.py:83:4: C0103: Constant name "grid" doesn't conform to UPPER_CASE naming style (invalid-name)
-sudoko.py:86:4: C0103: Constant name "given_input" doesn't conform to UPPER_CASE naming style (invalid-name)
+sudoko.py:53:0: C0103: Argument name "g" doesn't conform to snake_case naming style (invalid-name)
+sudoko.py:53:0: C0111: Missing function docstring (missing-docstring)
+sudoko.py:55:8: W0621: Redefining name 'i' from outer scope (line 87) (redefined-outer-name)
+sudoko.py:65:0: C0103: Argument name "g" doesn't conform to snake_case naming style (invalid-name)
+sudoko.py:65:0: C0111: Missing function docstring (missing-docstring)
+sudoko.py:66:8: W0621: Redefining name 'i' from outer scope (line 87) (redefined-outer-name)
+sudoko.py:67:12: W0621: Redefining name 'j' from outer scope (line 88) (redefined-outer-name)
+sudoko.py:69:12: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
+sudoko.py:71:16: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
+sudoko.py:73:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
+sudoko.py:82:4: C0103: Constant name "grid" doesn't conform to UPPER_CASE naming style (invalid-name)
+sudoko.py:85:4: C0103: Constant name "given_input" doesn't conform to UPPER_CASE naming style (invalid-name)
 
 ------------------------------------------------------------------
-Your code has been rated at 4.63/10 (previous run: 4.63/10, +0.00)
+Your code has been rated at 4.70/10 (previous run: 4.63/10, +0.06)
 
