@@ -25,5 +25,5 @@ sudoko.py:30:4: C0103: Constant name "grid" doesn't conform to UPPER_CASE naming
 sudoko.py:33:4: C0103: Constant name "given_input" doesn't conform to UPPER_CASE naming style (invalid-name)
 
 ------------------------------------------------------------------
-Your code has been rated at 4.71/10 (previous run: 2.57/10, +2.13)
+Your code has been rated at 4.55/10 (previous run: 4.71/10, -0.16)
 
