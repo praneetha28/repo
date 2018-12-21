@@ -1,0 +1,739 @@
+########## Testcase 0: Passed ##########
+Expected Output: 
+Given sudoku is solved
+
+Your Output: 
+Given sudoku is solved
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+7
+7
+7
+7
+7
+7
+7
+7
+7
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 3: Failed ##########
+Expected Output: 
+5
+6
+2
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 4: Failed ##########
+Expected Output: 
+4
+6
+9
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 5: Failed ##########
+Expected Output: 
+34
+37
+47
+268
+68
+2
+59
+19
+15
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 6: Failed ##########
+Expected Output: 
+2
+1
+8
+5
+7
+4
+9
+6
+3
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 7: Failed ##########
+Expected Output: 
+7
+2
+6
+3
+1
+5
+4
+8
+9
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 8: Failed ##########
+Expected Output: 
+1
+5
+2
+4
+8
+9
+3
+7
+6
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 9: Failed ##########
+Expected Output: 
+378
+378
+378
+125
+125
+125
+469
+469
+469
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 10: Failed ##########
+Expected Output: 
+1
+7
+4
+3
+5
+2
+9
+6
+8
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 11: Failed ##########
+Expected Output: 
+6
+1
+5
+9
+8
+3
+2
+7
+4
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 12: Failed ##########
+Expected Output: 
+1
+5
+2
+7
+3
+9
+4
+6
+8
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 13: Failed ##########
+Expected Output: 
+258
+258
+258
+137
+137
+137
+469
+469
+469
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 14: Failed ##########
+Expected Output: 
+1
+5
+2
+7
+3
+9
+4
+6
+8
+258
+258
+258
+137
+137
+137
+469
+469
+469
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 15: Failed ##########
+Expected Output: 
+12357
+13
+57
+6
+46
+7
+23
+89
+23489
+3
+34
+27
+2
+15
+15
+1
+17
+59
+5
+68
+68
+36
+36
+34678
+34678
+34678
+156
+156
+156
+23689
+23689
+23689
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 16: Failed ##########
+Expected Output: 
+Invalid Sudoku:Duplicate values
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 17: Failed ##########
+Expected Output: 
+Invalid input
+
+Your Output: 
+Invalid input
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 18: Failed ##########
+Expected Output: 
+Invalid Sudoku:Duplicate values
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 19: Failed ##########
+Expected Output: 
+1679
+12679
+139
+2369
+1269
+1239
+26789
+1256789
+14589
+24569
+1245689
+12679
+1249
+124679
+2689
+15689
+125689
+234569
+1245689
+12369
+12349
+123469
+34789
+135789
+34579
+34579
+4579
+135789
+135789
+3679
+135679
+135679
+3579
+25679
+12359
+123579
+346789
+3456789
+356789
+34579
+245679
+235789
+23589
+235789
+289
+289
+289
+14589
+124589
+124589
+36789
+36789
+14789
+14789
+134689
+134689
+134689
+236789
+5789
+5789
+5789
+235689
+235689
+235689
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 20: Failed ##########
+Expected Output: 
+Invalid input
+
+Your Output: 
+Invalid input
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 21: Failed ##########
+Expected Output: 
+124
+26
+2468
+1489
+1249
+248
+247
+247
+3478
+234
+2478
+12
+23
+34
+24
+13457
+247
+1259
+1259
+1579
+1457
+4579
+2459
+259
+2569
+579
+579
+259
+1359
+1359
+159
+145
+4589
+459
+134579
+134579
+357
+357
+357
+134
+2378
+2378
+2378
+36
+36
+12345
+12345
+12345
+2356
+2356
+1346
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 22: Failed ##########
+Expected Output: 
+2369
+2467
+24679
+2467
+1346
+23467
+1247
+2679
+679
+269
+24567
+46
+24678
+2478
+1367
+236
+267
+2678
+267
+136
+3467
+346
+134567
+1345
+345
+145
+23467
+23467
+23467
+349
+2349
+249
+349
+349
+349
+12345
+12345
+2345
+234589
+234569
+234569
+23456
+23456
+4569
+4569
+123456
+123456
+123456
+234567
+4567
+4567
+4567
+45689
+45689
+45689
+4567
+4567
+4567
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 23: Failed ##########
+Expected Output: 
+2
+1
+5
+8
+6
+6
+67
+5
+45
+6
+49
+45
+4
+1
+78
+78
+4
+34
+7
+46
+4
+69
+26
+6
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
+########## Testcase 24: Failed ##########
+Expected Output: 
+2
+6
+346
+13
+134
+58
+8
+9
+4
+8
+36
+138
+13
+348
+34
+368
+368
+3
+235
+23
+48
+234
+23
+38
+147
+147
+13
+137
+127
+1239
+1239
+1379
+1379
+128
+128
+129
+19
+
+Your Output: 
+Traceback (most recent call last):
+  File "sudoku.py", line 32, in <module>
+    main()
+  File "sudoku.py", line 23, in main
+    sudoku(input1)
+  File "sudoku.py", line 5, in sudoku
+    solveSudoku(list1)
+NameError: name 'solveSudoku' is not defined
+----------------------------------------
+
