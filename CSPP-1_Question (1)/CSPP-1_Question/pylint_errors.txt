@@ -1,29 +1,82 @@
 ************* Module sudoko
-sudoko.py:5:7: C0326: Exactly one space required before assignment
+sudoko.py:1:20: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:2:22: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:3:21: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:6:55: C0326: No space allowed before :
+    if row >= 0 and row <= 2 and col >= 0 and col <= 2 :
+                                                       ^ (bad-whitespace)
+sudoko.py:12:55: C0326: No space allowed before :
+    if row >= 3 and row <= 5 and col >= 0 and col <= 2 :
+                                                       ^ (bad-whitespace)
+sudoko.py:17:55: C0326: No space allowed before :
+    if row >= 6 and row <= 8 and col >= 0 and col <= 2 :
+                                                       ^ (bad-whitespace)
+sudoko.py:22:55: C0326: No space allowed before :
+    if row >= 0 and row <= 2 and col >= 3 and col <= 5 :
+                                                       ^ (bad-whitespace)
+sudoko.py:27:55: C0326: No space allowed before :
+    if row >= 3 and row <= 5 and col >= 3 and col <= 5 :
+                                                       ^ (bad-whitespace)
+sudoko.py:32:55: C0326: No space allowed before :
+    if row >= 6 and row <= 8 and col >= 3 and col <= 5 :
+                                                       ^ (bad-whitespace)
+sudoko.py:37:55: C0326: No space allowed before :
+    if row >= 0 and row <= 2 and col >= 6 and col <= 8 :
+                                                       ^ (bad-whitespace)
+sudoko.py:42:55: C0326: No space allowed before :
+    if row >= 3 and row <= 5 and col >= 6 and col <= 8 :
+                                                       ^ (bad-whitespace)
+sudoko.py:47:55: C0326: No space allowed before :
+    if row >= 6 and row <= 8 and col >= 6 and col <= 8 :
+                                                       ^ (bad-whitespace)
+sudoko.py:52:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:56:7: C0326: Exactly one space required before assignment
     lis= set()
        ^ (bad-whitespace)
-sudoko.py:27:11: C0326: Exactly one space required around comparison
-if __name__=="__main__":
+sudoko.py:80:24: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:80:11: C0326: Exactly one space required around comparison
+if __name__=="__main__": 
            ^^ (bad-whitespace)
-sudoko.py:30:8: C0326: Exactly one space required around assignment
-    grid=[['0' for x in range(9)]for y in range(9)]
+sudoko.py:81:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:82:38: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:83:51: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:83:8: C0326: Exactly one space required around assignment
+    grid=[['0' for x in range(9)]for y in range(9)] 
         ^ (bad-whitespace)
+sudoko.py:85:0: C0303: Trailing whitespace (trailing-whitespace)
 sudoko.py:1:0: C0111: Missing module docstring (missing-docstring)
 sudoko.py:1:0: C0111: Missing function docstring (missing-docstring)
-sudoko.py:2:8: W0621: Redefining name 'i' from outer scope (line 35) (redefined-outer-name)
-sudoko.py:4:0: C0103: Argument name "g" doesn't conform to snake_case naming style (invalid-name)
+sudoko.py:2:8: W0621: Redefining name 'i' from outer scope (line 88) (redefined-outer-name)
 sudoko.py:4:0: C0111: Missing function docstring (missing-docstring)
-sudoko.py:6:8: W0621: Redefining name 'i' from outer scope (line 35) (redefined-outer-name)
-sudoko.py:13:0: C0103: Argument name "g" doesn't conform to snake_case naming style (invalid-name)
-sudoko.py:13:0: C0111: Missing function docstring (missing-docstring)
-sudoko.py:14:8: W0621: Redefining name 'i' from outer scope (line 35) (redefined-outer-name)
-sudoko.py:15:12: W0621: Redefining name 'j' from outer scope (line 36) (redefined-outer-name)
-sudoko.py:17:12: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
-sudoko.py:19:16: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
-sudoko.py:21:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
-sudoko.py:30:4: C0103: Constant name "grid" doesn't conform to UPPER_CASE naming style (invalid-name)
-sudoko.py:33:4: C0103: Constant name "given_input" doesn't conform to UPPER_CASE naming style (invalid-name)
+sudoko.py:4:13: W0621: Redefining name 'grid' from outer scope (line 83) (redefined-outer-name)
+sudoko.py:7:12: W0621: Redefining name 'i' from outer scope (line 88) (redefined-outer-name)
+sudoko.py:8:16: W0621: Redefining name 'j' from outer scope (line 89) (redefined-outer-name)
+sudoko.py:5:4: C0103: Variable name "l" doesn't conform to snake_case naming style (invalid-name)
+sudoko.py:6:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:12:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:17:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:22:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:27:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:32:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:37:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:42:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:47:7: R1716: Simplify chained comparison between the operands (chained-comparison)
+sudoko.py:4:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+sudoko.py:4:0: R0911: Too many return statements (9/6) (too-many-return-statements)
+sudoko.py:4:0: R0912: Too many branches (27/12) (too-many-branches)
+sudoko.py:55:0: C0103: Argument name "g" doesn't conform to snake_case naming style (invalid-name)
+sudoko.py:55:0: C0111: Missing function docstring (missing-docstring)
+sudoko.py:57:8: W0621: Redefining name 'i' from outer scope (line 88) (redefined-outer-name)
+sudoko.py:66:0: C0103: Argument name "g" doesn't conform to snake_case naming style (invalid-name)
+sudoko.py:66:0: C0111: Missing function docstring (missing-docstring)
+sudoko.py:67:8: W0621: Redefining name 'i' from outer scope (line 88) (redefined-outer-name)
+sudoko.py:68:12: W0621: Redefining name 'j' from outer scope (line 89) (redefined-outer-name)
+sudoko.py:70:12: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
+sudoko.py:72:16: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
+sudoko.py:74:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
+sudoko.py:83:4: C0103: Constant name "grid" doesn't conform to UPPER_CASE naming style (invalid-name)
+sudoko.py:86:4: C0103: Constant name "given_input" doesn't conform to UPPER_CASE naming style (invalid-name)
 
 ------------------------------------------------------------------
-Your code has been rated at 4.55/10 (previous run: 4.71/10, -0.16)
+Your code has been rated at 3.69/10 (previous run: 4.55/10, -0.85)
 

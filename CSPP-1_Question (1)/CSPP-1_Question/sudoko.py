@@ -1,6 +1,57 @@
-def print_grid(arr):
-    for i in range(9):
-        print(arr[i])
+def print_grid(arr): 
+    for i in range(9): 
+        print(arr[i]) 
+def sub_grid(grid, row, col):
+    l = []
+    if row >= 0 and row <= 2 and col >= 0 and col <= 2 :
+        for i in range(0, 3):
+            for j in range(0, 3):
+                l.append(grid[i][j])
+        return l
+
+    if row >= 3 and row <= 5 and col >= 0 and col <= 2 :
+        for i in range(3, 6):
+            for j in range(0, 3):
+                l.append(grid[i][j])
+        return l
+    if row >= 6 and row <= 8 and col >= 0 and col <= 2 :
+        for i in range(6, 9):
+            for j in range(0, 3):
+                l.append(grid[i][j])
+        return l
+    if row >= 0 and row <= 2 and col >= 3 and col <= 5 :
+        for i in range(0, 3):
+            for j in range(3, 5):
+                l.append(grid[i][j])
+        return l
+    if row >= 3 and row <= 5 and col >= 3 and col <= 5 :
+        for i in range(3, 6):
+            for j in range(3, 6):
+                l.append(grid[i][j])
+        return l
+    if row >= 6 and row <= 8 and col >= 3 and col <= 5 :
+        for i in range(6, 9):
+            for j in range(3, 6):
+                l.append(grid[i][j])
+        return l
+    if row >= 0 and row <= 2 and col >= 6 and col <= 8 :
+        for i in range(0, 3):
+            for j in range(6, 9):
+                l.append(grid[i][j])
+        return l
+    if row >= 3 and row <= 5 and col >= 6 and col <= 8 :
+        for i in range(3, 6):
+            for j in range(6, 9):
+                l.append(grid[i][j])
+        return l
+    if row >= 6 and row <= 8 and col >= 6 and col <= 8 :
+        for i in range(6, 9):
+            for j in range(6, 9):
+                l.append(grid[i][j])
+        return l
+    
+
+
 def create_set(g, row, col):
     lis= set()
     for i in range(9):
@@ -8,6 +59,8 @@ def create_set(g, row, col):
             lis.add(g[row][i])
         if g[i][col] != '0':
             lis.add(g[i][col])
+    for each in sub_grid(grid, row, col):
+        lis.add(each)
     return lis
 
 def possibilities(g):
@@ -24,12 +77,12 @@ def possibilities(g):
                         res += each
                 print(res)
 
-if __name__=="__main__":
-
-    # creating a 2D array for the grid
-    grid=[['0' for x in range(9)]for y in range(9)]
-    # print_grid(grid)
-
+if __name__=="__main__": 
+      
+    # creating a 2D array for the grid 
+    grid=[['0' for x in range(9)]for y in range(9)] 
+    print_grid(grid)
+      
     given_input = input()
     k = 0
     for i in range(9):
@@ -37,5 +90,5 @@ if __name__=="__main__":
             if given_input[k] != '.':
                 grid[i][j] = given_input[k]
             k += 1
-    # print_grid(grid)
+    print_grid(grid)
     possibilities(grid)
