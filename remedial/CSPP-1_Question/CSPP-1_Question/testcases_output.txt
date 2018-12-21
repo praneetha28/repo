@@ -3,10 +3,10 @@ Expected Output:
 Given sudoku is solved
 
 Your Output: 
-
+81
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 7
 7
@@ -19,6 +19,7 @@ Expected Output:
 7
 
 Your Output: 
+81
 7
 7
 7
@@ -30,7 +31,7 @@ Your Output:
 7
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 1
 2
@@ -43,6 +44,7 @@ Expected Output:
 9
 
 Your Output: 
+81
 1
 2
 3
@@ -54,25 +56,27 @@ Your Output:
 9
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 5
 6
 2
 
 Your Output: 
+81
 5
 6
 2
 ----------------------------------------
 
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 4
 6
 9
 
 Your Output: 
+81
 4
 6
 9
@@ -91,6 +95,7 @@ Expected Output:
 15
 
 Your Output: 
+81
 3
 7
 4
@@ -102,7 +107,7 @@ Your Output:
 5
 ----------------------------------------
 
-########## Testcase 6: Passed ##########
+########## Testcase 6: Failed ##########
 Expected Output: 
 2
 1
@@ -115,6 +120,7 @@ Expected Output:
 3
 
 Your Output: 
+81
 2
 1
 8
@@ -126,7 +132,7 @@ Your Output:
 3
 ----------------------------------------
 
-########## Testcase 7: Passed ##########
+########## Testcase 7: Failed ##########
 Expected Output: 
 7
 2
@@ -139,6 +145,7 @@ Expected Output:
 9
 
 Your Output: 
+81
 7
 2
 6
@@ -150,7 +157,7 @@ Your Output:
 9
 ----------------------------------------
 
-########## Testcase 8: Passed ##########
+########## Testcase 8: Failed ##########
 Expected Output: 
 1
 5
@@ -163,6 +170,7 @@ Expected Output:
 6
 
 Your Output: 
+81
 1
 5
 2
@@ -187,6 +195,7 @@ Expected Output:
 469
 
 Your Output: 
+81
 8
 7
 3
@@ -198,7 +207,7 @@ Your Output:
 4
 ----------------------------------------
 
-########## Testcase 10: Passed ##########
+########## Testcase 10: Failed ##########
 Expected Output: 
 1
 7
@@ -211,6 +220,7 @@ Expected Output:
 8
 
 Your Output: 
+81
 1
 7
 4
@@ -222,7 +232,7 @@ Your Output:
 8
 ----------------------------------------
 
-########## Testcase 11: Passed ##########
+########## Testcase 11: Failed ##########
 Expected Output: 
 6
 1
@@ -235,6 +245,7 @@ Expected Output:
 4
 
 Your Output: 
+81
 6
 1
 5
@@ -246,7 +257,7 @@ Your Output:
 4
 ----------------------------------------
 
-########## Testcase 12: Passed ##########
+########## Testcase 12: Failed ##########
 Expected Output: 
 1
 5
@@ -259,6 +270,7 @@ Expected Output:
 8
 
 Your Output: 
+81
 1
 5
 2
@@ -283,6 +295,7 @@ Expected Output:
 469
 
 Your Output: 
+81
 5
 8
 2
@@ -316,6 +329,7 @@ Expected Output:
 469
 
 Your Output: 
+81
 1
 5
 2
@@ -372,6 +386,7 @@ Expected Output:
 23689
 
 Your Output: 
+81
 13
 57
 16
@@ -407,6 +422,7 @@ Expected Output:
 Invalid Sudoku:Duplicate values
 
 Your Output: 
+81
 23456789
 13456789
 12456789
@@ -418,11 +434,12 @@ Your Output:
 12345678
 ----------------------------------------
 
-########## Testcase 17: Passed ##########
+########## Testcase 17: Failed ##########
 Expected Output: 
 Invalid input
 
 Your Output: 
+73
 Invalid input
 ----------------------------------------
 
@@ -431,6 +448,7 @@ Expected Output:
 Invalid Sudoku:Duplicate values
 
 Your Output: 
+81
 7
 ----------------------------------------
 
@@ -502,6 +520,7 @@ Expected Output:
 235689
 
 Your Output: 
+81
 1679
 123679
 139
@@ -568,11 +587,12 @@ Your Output:
 236789
 ----------------------------------------
 
-########## Testcase 20: Passed ##########
+########## Testcase 20: Failed ##########
 Expected Output: 
 Invalid input
 
 Your Output: 
+71
 Invalid input
 ----------------------------------------
 
@@ -631,6 +651,7 @@ Expected Output:
 1346
 
 Your Output: 
+81
 12469
 269
 12468
@@ -746,6 +767,7 @@ Expected Output:
 4567
 
 Your Output: 
+81
 23469
 23467
 124679
@@ -834,6 +856,7 @@ Expected Output:
 6
 
 Your Output: 
+81
 2
 1
 5
@@ -901,6 +924,7 @@ Expected Output:
 19
 
 Your Output: 
+81
 24
 346
 2346

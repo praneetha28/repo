@@ -24,6 +24,7 @@ def possibilities(mat):
 
 def main():
     input1 = input()
+    print(len(input1))
     grid=[['0' for x in range(9)]for y in range(9)]
     if len(input1) != 81:
         print("Invalid input")
