@@ -24,7 +24,6 @@ def possibilities(mat):
 
 def main():
     input1 = input()
-    print(len(input1))
     grid=[['0' for x in range(9)]for y in range(9)]
     if len(input1) != 81:
         print("Invalid input")
@@ -35,9 +34,6 @@ def main():
                 if input1[k] != '.':
                     grid[i][j] = input1[k]
                 k += 1
-    # if k == 9:
-    #     checkSudoku(grid)
-    # else:
         possibilities(grid)
 
 if __name__ == '__main__':

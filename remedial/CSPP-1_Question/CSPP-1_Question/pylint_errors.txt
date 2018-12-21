@@ -1,8 +1,8 @@
 ************* Module sudoku
-sudoku.py:28:8: C0326: Exactly one space required around assignment
+sudoku.py:27:8: C0326: Exactly one space required around assignment
     grid=[['0' for x in range(9)]for y in range(9)]
         ^ (bad-whitespace)
-sudoku.py:44:0: C0304: Final newline missing (missing-final-newline)
+sudoku.py:40:0: C0304: Final newline missing (missing-final-newline)
 sudoku.py:1:0: C0111: Missing module docstring (missing-docstring)
 sudoku.py:1:0: C0103: Argument name "g" doesn't conform to snake_case naming style (invalid-name)
 sudoku.py:1:0: C0103: Argument name "r" doesn't conform to snake_case naming style (invalid-name)
@@ -15,5 +15,5 @@ sudoku.py:18:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is
 sudoku.py:25:0: C0111: Missing function docstring (missing-docstring)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.57/10 (previous run: 6.47/10, +0.10)
+Your code has been rated at 6.47/10 (previous run: 6.57/10, -0.10)
 
