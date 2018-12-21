@@ -3,10 +3,11 @@ Expected Output:
 Given sudoku is solved
 
 Your Output: 
-
+0
+Given sudoku is solved
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 7
 7
@@ -19,6 +20,7 @@ Expected Output:
 7
 
 Your Output: 
+9
 7
 7
 7
@@ -30,7 +32,7 @@ Your Output:
 7
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 1
 2
@@ -43,6 +45,7 @@ Expected Output:
 9
 
 Your Output: 
+9
 1
 2
 3
@@ -54,25 +57,27 @@ Your Output:
 9
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 5
 6
 2
 
 Your Output: 
+3
 5
 6
 2
 ----------------------------------------
 
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 4
 6
 9
 
 Your Output: 
+3
 4
 6
 9
@@ -91,6 +96,7 @@ Expected Output:
 15
 
 Your Output: 
+9
 3
 7
 4
@@ -102,7 +108,7 @@ Your Output:
 5
 ----------------------------------------
 
-########## Testcase 6: Passed ##########
+########## Testcase 6: Failed ##########
 Expected Output: 
 2
 1
@@ -115,6 +121,7 @@ Expected Output:
 3
 
 Your Output: 
+9
 2
 1
 8
@@ -126,7 +133,7 @@ Your Output:
 3
 ----------------------------------------
 
-########## Testcase 7: Passed ##########
+########## Testcase 7: Failed ##########
 Expected Output: 
 7
 2
@@ -139,6 +146,7 @@ Expected Output:
 9
 
 Your Output: 
+9
 7
 2
 6
@@ -150,7 +158,7 @@ Your Output:
 9
 ----------------------------------------
 
-########## Testcase 8: Passed ##########
+########## Testcase 8: Failed ##########
 Expected Output: 
 1
 5
@@ -163,6 +171,7 @@ Expected Output:
 6
 
 Your Output: 
+9
 1
 5
 2
@@ -187,6 +196,7 @@ Expected Output:
 469
 
 Your Output: 
+9
 8
 7
 3
@@ -198,7 +208,7 @@ Your Output:
 4
 ----------------------------------------
 
-########## Testcase 10: Passed ##########
+########## Testcase 10: Failed ##########
 Expected Output: 
 1
 7
@@ -211,6 +221,7 @@ Expected Output:
 8
 
 Your Output: 
+9
 1
 7
 4
@@ -222,7 +233,7 @@ Your Output:
 8
 ----------------------------------------
 
-########## Testcase 11: Passed ##########
+########## Testcase 11: Failed ##########
 Expected Output: 
 6
 1
@@ -235,6 +246,7 @@ Expected Output:
 4
 
 Your Output: 
+9
 6
 1
 5
@@ -246,7 +258,7 @@ Your Output:
 4
 ----------------------------------------
 
-########## Testcase 12: Passed ##########
+########## Testcase 12: Failed ##########
 Expected Output: 
 1
 5
@@ -259,6 +271,7 @@ Expected Output:
 8
 
 Your Output: 
+9
 1
 5
 2
@@ -283,6 +296,7 @@ Expected Output:
 469
 
 Your Output: 
+9
 5
 8
 2
@@ -316,6 +330,7 @@ Expected Output:
 469
 
 Your Output: 
+18
 1
 5
 2
@@ -372,6 +387,7 @@ Expected Output:
 23689
 
 Your Output: 
+32
 13
 57
 16
@@ -407,6 +423,7 @@ Expected Output:
 Invalid Sudoku:Duplicate values
 
 Your Output: 
+9
 23456789
 13456789
 12456789
@@ -425,11 +442,11 @@ Invalid input
 Your Output: 
 Invalid input
 Traceback (most recent call last):
-  File "sudoku.py", line 86, in <module>
+  File "sudoku.py", line 91, in <module>
     main()
-  File "sudoku.py", line 80, in main
-    if k == 9:
-UnboundLocalError: local variable 'k' referenced before assignment
+  File "sudoku.py", line 81, in main
+    print(count)
+UnboundLocalError: local variable 'count' referenced before assignment
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -437,6 +454,7 @@ Expected Output:
 Invalid Sudoku:Duplicate values
 
 Your Output: 
+1
 7
 ----------------------------------------
 
@@ -508,6 +526,7 @@ Expected Output:
 235689
 
 Your Output: 
+64
 1679
 123679
 139
@@ -581,11 +600,11 @@ Invalid input
 Your Output: 
 Invalid input
 Traceback (most recent call last):
-  File "sudoku.py", line 86, in <module>
+  File "sudoku.py", line 91, in <module>
     main()
-  File "sudoku.py", line 80, in main
-    if k == 9:
-UnboundLocalError: local variable 'k' referenced before assignment
+  File "sudoku.py", line 81, in main
+    print(count)
+UnboundLocalError: local variable 'count' referenced before assignment
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
@@ -643,6 +662,7 @@ Expected Output:
 1346
 
 Your Output: 
+51
 12469
 269
 12468
@@ -758,6 +778,7 @@ Expected Output:
 4567
 
 Your Output: 
+58
 23469
 23467
 124679
@@ -846,6 +867,7 @@ Expected Output:
 6
 
 Your Output: 
+24
 2
 1
 5
@@ -913,6 +935,7 @@ Expected Output:
 19
 
 Your Output: 
+37
 24
 346
 2346

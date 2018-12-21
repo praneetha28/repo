@@ -62,6 +62,7 @@ def checkcol(sudoku):
                 continue
             return False
     return True
+
 def main():
     input1 = input()
     grid=[['0' for x in range(9)]for y in range(9)]
@@ -77,8 +78,12 @@ def main():
                 else:
                     count += 1
                 k += 1
-    if k == 9:
-        checkSudoku(grid)
+    print(count)
+    if count == 0:
+        if checkSudoku(grid):
+            print("Given sudoku is solved")
+        else:
+            print("Invalid Sudoku:Duplicate values")
     else:
         possibilities(grid)
 
