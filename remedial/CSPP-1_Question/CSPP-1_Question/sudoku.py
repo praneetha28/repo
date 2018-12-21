@@ -79,13 +79,13 @@ def main():
                     count += 1
                 k += 1
     # print(count)
-    if count == 0:
-        if checkSudoku(grid):
-            print("Given sudoku is solved")
+        if count == 0:
+            if checkSudoku(grid):
+                print("Given sudoku is solved")
+            else:
+                print("Invalid Sudoku:Duplicate values")
         else:
-            print("Invalid Sudoku:Duplicate values")
-    else:
-        possibilities(grid)
+            possibilities(grid)
 
 if __name__ == '__main__':
     main()

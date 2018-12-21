@@ -418,18 +418,12 @@ Your Output:
 12345678
 ----------------------------------------
 
-########## Testcase 17: Failed ##########
+########## Testcase 17: Passed ##########
 Expected Output: 
 Invalid input
 
 Your Output: 
 Invalid input
-Traceback (most recent call last):
-  File "sudoku.py", line 91, in <module>
-    main()
-  File "sudoku.py", line 82, in main
-    if count == 0:
-UnboundLocalError: local variable 'count' referenced before assignment
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -574,18 +568,12 @@ Your Output:
 236789
 ----------------------------------------
 
-########## Testcase 20: Failed ##########
+########## Testcase 20: Passed ##########
 Expected Output: 
 Invalid input
 
 Your Output: 
 Invalid input
-Traceback (most recent call last):
-  File "sudoku.py", line 91, in <module>
-    main()
-  File "sudoku.py", line 82, in main
-    if count == 0:
-UnboundLocalError: local variable 'count' referenced before assignment
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
