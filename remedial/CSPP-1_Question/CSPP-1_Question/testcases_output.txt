@@ -6,7 +6,7 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 7
 7
@@ -19,10 +19,18 @@ Expected Output:
 7
 
 Your Output: 
-Given sudoku is solved
+7
+7
+7
+7
+7
+7
+7
+7
+7
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 1
 2
@@ -35,7 +43,15 @@ Expected Output:
 9
 
 Your Output: 
-Given sudoku is solved
+1
+2
+3
+4
+5
+6
+7
+8
+9
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -75,10 +91,18 @@ Expected Output:
 15
 
 Your Output: 
-Given sudoku is solved
+3
+7
+4
+6
+8
+2
+9
+1
+5
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 2
 1
@@ -91,10 +115,18 @@ Expected Output:
 3
 
 Your Output: 
-Given sudoku is solved
+2
+1
+8
+5
+7
+4
+9
+6
+3
 ----------------------------------------
 
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 7
 2
@@ -107,10 +139,18 @@ Expected Output:
 9
 
 Your Output: 
-Given sudoku is solved
+7
+2
+6
+3
+1
+5
+4
+8
+9
 ----------------------------------------
 
-########## Testcase 8: Failed ##########
+########## Testcase 8: Passed ##########
 Expected Output: 
 1
 5
@@ -123,7 +163,15 @@ Expected Output:
 6
 
 Your Output: 
-Given sudoku is solved
+1
+5
+2
+4
+8
+9
+3
+7
+6
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -139,10 +187,18 @@ Expected Output:
 469
 
 Your Output: 
-Given sudoku is solved
+8
+7
+3
+5
+1
+2
+9
+6
+4
 ----------------------------------------
 
-########## Testcase 10: Failed ##########
+########## Testcase 10: Passed ##########
 Expected Output: 
 1
 7
@@ -155,10 +211,18 @@ Expected Output:
 8
 
 Your Output: 
-Given sudoku is solved
+1
+7
+4
+3
+5
+2
+9
+6
+8
 ----------------------------------------
 
-########## Testcase 11: Failed ##########
+########## Testcase 11: Passed ##########
 Expected Output: 
 6
 1
@@ -171,10 +235,18 @@ Expected Output:
 4
 
 Your Output: 
-Given sudoku is solved
+6
+1
+5
+9
+8
+3
+2
+7
+4
 ----------------------------------------
 
-########## Testcase 12: Failed ##########
+########## Testcase 12: Passed ##########
 Expected Output: 
 1
 5
@@ -187,7 +259,15 @@ Expected Output:
 8
 
 Your Output: 
-Given sudoku is solved
+1
+5
+2
+7
+3
+9
+4
+6
+8
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -203,7 +283,15 @@ Expected Output:
 469
 
 Your Output: 
-Given sudoku is solved
+5
+8
+2
+1
+3
+7
+9
+6
+4
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -314,12 +402,20 @@ Your Output:
 89
 ----------------------------------------
 
-########## Testcase 16: Passed ##########
+########## Testcase 16: Failed ##########
 Expected Output: 
 Invalid Sudoku:Duplicate values
 
 Your Output: 
-Invalid Sudoku:Duplicate values
+23456789
+13456789
+12456789
+12356789
+12346789
+12345789
+12345689
+12345679
+12345678
 ----------------------------------------
 
 ########## Testcase 17: Failed ##########
@@ -329,11 +425,11 @@ Invalid input
 Your Output: 
 Invalid input
 Traceback (most recent call last):
-  File "sudoku.py", line 89, in <module>
+  File "sudoku.py", line 86, in <module>
     main()
   File "sudoku.py", line 80, in main
-    if count == 9:
-UnboundLocalError: local variable 'count' referenced before assignment
+    if k == 9:
+UnboundLocalError: local variable 'k' referenced before assignment
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -485,11 +581,11 @@ Invalid input
 Your Output: 
 Invalid input
 Traceback (most recent call last):
-  File "sudoku.py", line 89, in <module>
+  File "sudoku.py", line 86, in <module>
     main()
   File "sudoku.py", line 80, in main
-    if count == 9:
-UnboundLocalError: local variable 'count' referenced before assignment
+    if k == 9:
+UnboundLocalError: local variable 'k' referenced before assignment
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########

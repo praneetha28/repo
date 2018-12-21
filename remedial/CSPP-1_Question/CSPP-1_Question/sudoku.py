@@ -77,11 +77,8 @@ def main():
                 else:
                     count += 1
                 k += 1
-    if count == 9:
-        if (checkSudoku(grid)):
-            print("Given sudoku is solved")
-        else:
-            print("Invalid Sudoku:Duplicate values")
+    if k == 9:
+        checkSudoku(grid)
     else:
         possibilities(grid)
 
