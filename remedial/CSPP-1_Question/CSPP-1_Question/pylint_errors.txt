@@ -24,5 +24,5 @@ sudoku.py:60:12: C0103: Variable name "q" doesn't conform to snake_case naming s
 sudoku.py:66:0: C0111: Missing function docstring (missing-docstring)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.27/10 (previous run: 7.16/10, +0.11)
+Your code has been rated at 7.24/10 (previous run: 7.27/10, -0.04)
 

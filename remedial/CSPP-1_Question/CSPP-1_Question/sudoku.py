@@ -78,7 +78,7 @@ def main():
                 else:
                     count += 1
                 k += 1
-    print(count)
+    # print(count)
     if count == 0:
         if checkSudoku(grid):
             print("Given sudoku is solved")
