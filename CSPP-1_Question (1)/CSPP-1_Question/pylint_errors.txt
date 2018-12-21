@@ -1,0 +1,37 @@
+************* Module sudoko
+sudoko.py:1:20: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:2:22: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:3:21: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:5:7: C0326: Exactly one space required before assignment
+    lis= set()
+       ^ (bad-whitespace)
+sudoko.py:27:24: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:27:11: C0326: Exactly one space required around comparison
+if __name__=="__main__": 
+           ^^ (bad-whitespace)
+sudoko.py:28:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:29:38: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:30:51: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:30:8: C0326: Exactly one space required around assignment
+    grid=[['0' for x in range(9)]for y in range(9)] 
+        ^ (bad-whitespace)
+sudoko.py:32:0: C0303: Trailing whitespace (trailing-whitespace)
+sudoko.py:1:0: C0111: Missing module docstring (missing-docstring)
+sudoko.py:1:0: C0111: Missing function docstring (missing-docstring)
+sudoko.py:2:8: W0621: Redefining name 'i' from outer scope (line 35) (redefined-outer-name)
+sudoko.py:4:0: C0103: Argument name "g" doesn't conform to snake_case naming style (invalid-name)
+sudoko.py:4:0: C0111: Missing function docstring (missing-docstring)
+sudoko.py:6:8: W0621: Redefining name 'i' from outer scope (line 35) (redefined-outer-name)
+sudoko.py:13:0: C0103: Argument name "g" doesn't conform to snake_case naming style (invalid-name)
+sudoko.py:13:0: C0111: Missing function docstring (missing-docstring)
+sudoko.py:14:8: W0621: Redefining name 'i' from outer scope (line 35) (redefined-outer-name)
+sudoko.py:15:12: W0621: Redefining name 'j' from outer scope (line 36) (redefined-outer-name)
+sudoko.py:17:12: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
+sudoko.py:19:16: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
+sudoko.py:21:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
+sudoko.py:30:4: C0103: Constant name "grid" doesn't conform to UPPER_CASE naming style (invalid-name)
+sudoko.py:33:4: C0103: Constant name "given_input" doesn't conform to UPPER_CASE naming style (invalid-name)
+
+-----------------------------------
+Your code has been rated at 2.57/10
+
