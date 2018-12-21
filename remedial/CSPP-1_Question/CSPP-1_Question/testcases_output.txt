@@ -6,7 +6,7 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 7
 7
@@ -19,18 +19,15 @@ Expected Output:
 7
 
 Your Output: 
-7
-7
-7
-7
-7
-7
-7
-7
-7
+Traceback (most recent call last):
+  File "sudoku.py", line 89, in <module>
+    main()
+  File "sudoku.py", line 81, in main
+    if (checkSudoku(grid)):
+NameError: name 'checkSudoku' is not defined
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 1
 2
@@ -43,15 +40,12 @@ Expected Output:
 9
 
 Your Output: 
-1
-2
-3
-4
-5
-6
-7
-8
-9
+Traceback (most recent call last):
+  File "sudoku.py", line 89, in <module>
+    main()
+  File "sudoku.py", line 81, in main
+    if (checkSudoku(grid)):
+NameError: name 'checkSudoku' is not defined
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -91,18 +85,15 @@ Expected Output:
 15
 
 Your Output: 
-3
-7
-4
-6
-8
-2
-9
-1
-5
+Traceback (most recent call last):
+  File "sudoku.py", line 89, in <module>
+    main()
+  File "sudoku.py", line 81, in main
+    if (checkSudoku(grid)):
+NameError: name 'checkSudoku' is not defined
 ----------------------------------------
 
-########## Testcase 6: Passed ##########
+########## Testcase 6: Failed ##########
 Expected Output: 
 2
 1
@@ -115,18 +106,15 @@ Expected Output:
 3
 
 Your Output: 
-2
-1
-8
-5
-7
-4
-9
-6
-3
+Traceback (most recent call last):
+  File "sudoku.py", line 89, in <module>
+    main()
+  File "sudoku.py", line 81, in main
+    if (checkSudoku(grid)):
+NameError: name 'checkSudoku' is not defined
 ----------------------------------------
 
-########## Testcase 7: Passed ##########
+########## Testcase 7: Failed ##########
 Expected Output: 
 7
 2
@@ -139,18 +127,15 @@ Expected Output:
 9
 
 Your Output: 
-7
-2
-6
-3
-1
-5
-4
-8
-9
+Traceback (most recent call last):
+  File "sudoku.py", line 89, in <module>
+    main()
+  File "sudoku.py", line 81, in main
+    if (checkSudoku(grid)):
+NameError: name 'checkSudoku' is not defined
 ----------------------------------------
 
-########## Testcase 8: Passed ##########
+########## Testcase 8: Failed ##########
 Expected Output: 
 1
 5
@@ -163,15 +148,12 @@ Expected Output:
 6
 
 Your Output: 
-1
-5
-2
-4
-8
-9
-3
-7
-6
+Traceback (most recent call last):
+  File "sudoku.py", line 89, in <module>
+    main()
+  File "sudoku.py", line 81, in main
+    if (checkSudoku(grid)):
+NameError: name 'checkSudoku' is not defined
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -187,18 +169,15 @@ Expected Output:
 469
 
 Your Output: 
-8
-7
-3
-5
-1
-2
-9
-6
-4
+Traceback (most recent call last):
+  File "sudoku.py", line 89, in <module>
+    main()
+  File "sudoku.py", line 81, in main
+    if (checkSudoku(grid)):
+NameError: name 'checkSudoku' is not defined
 ----------------------------------------
 
-########## Testcase 10: Passed ##########
+########## Testcase 10: Failed ##########
 Expected Output: 
 1
 7
@@ -211,18 +190,15 @@ Expected Output:
 8
 
 Your Output: 
-1
-7
-4
-3
-5
-2
-9
-6
-8
+Traceback (most recent call last):
+  File "sudoku.py", line 89, in <module>
+    main()
+  File "sudoku.py", line 81, in main
+    if (checkSudoku(grid)):
+NameError: name 'checkSudoku' is not defined
 ----------------------------------------
 
-########## Testcase 11: Passed ##########
+########## Testcase 11: Failed ##########
 Expected Output: 
 6
 1
@@ -235,18 +211,15 @@ Expected Output:
 4
 
 Your Output: 
-6
-1
-5
-9
-8
-3
-2
-7
-4
+Traceback (most recent call last):
+  File "sudoku.py", line 89, in <module>
+    main()
+  File "sudoku.py", line 81, in main
+    if (checkSudoku(grid)):
+NameError: name 'checkSudoku' is not defined
 ----------------------------------------
 
-########## Testcase 12: Passed ##########
+########## Testcase 12: Failed ##########
 Expected Output: 
 1
 5
@@ -259,15 +232,12 @@ Expected Output:
 8
 
 Your Output: 
-1
-5
-2
-7
-3
-9
-4
-6
-8
+Traceback (most recent call last):
+  File "sudoku.py", line 89, in <module>
+    main()
+  File "sudoku.py", line 81, in main
+    if (checkSudoku(grid)):
+NameError: name 'checkSudoku' is not defined
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -283,15 +253,12 @@ Expected Output:
 469
 
 Your Output: 
-5
-8
-2
-1
-3
-7
-9
-6
-4
+Traceback (most recent call last):
+  File "sudoku.py", line 89, in <module>
+    main()
+  File "sudoku.py", line 81, in main
+    if (checkSudoku(grid)):
+NameError: name 'checkSudoku' is not defined
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -407,23 +374,26 @@ Expected Output:
 Invalid Sudoku:Duplicate values
 
 Your Output: 
-23456789
-13456789
-12456789
-12356789
-12346789
-12345789
-12345689
-12345679
-12345678
+Traceback (most recent call last):
+  File "sudoku.py", line 89, in <module>
+    main()
+  File "sudoku.py", line 81, in main
+    if (checkSudoku(grid)):
+NameError: name 'checkSudoku' is not defined
 ----------------------------------------
 
-########## Testcase 17: Passed ##########
+########## Testcase 17: Failed ##########
 Expected Output: 
 Invalid input
 
 Your Output: 
 Invalid input
+Traceback (most recent call last):
+  File "sudoku.py", line 89, in <module>
+    main()
+  File "sudoku.py", line 80, in main
+    if count == 9:
+UnboundLocalError: local variable 'count' referenced before assignment
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -568,12 +538,18 @@ Your Output:
 236789
 ----------------------------------------
 
-########## Testcase 20: Passed ##########
+########## Testcase 20: Failed ##########
 Expected Output: 
 Invalid input
 
 Your Output: 
 Invalid input
+Traceback (most recent call last):
+  File "sudoku.py", line 89, in <module>
+    main()
+  File "sudoku.py", line 80, in main
+    if count == 9:
+UnboundLocalError: local variable 'count' referenced before assignment
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
