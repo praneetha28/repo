@@ -1,5 +1,0 @@
-[master dcac6e8] "cspp1_m10_a1_1: 10/25 testcases passed. Cannot run hidden testcases as Server is unreachablepylint score: 4/10 "
- 4 files changed, 967 insertions(+), 1407 deletions(-)
- rewrite CSPP-1_Question (1)/CSPP-1_Question/result/score.json (92%)
- rewrite CSPP-1_Question (1)/CSPP-1_Question/testcases_output.txt (77%)
-fatal: unable to access 'https://github.com/praneetha28/repo.git/': Failed to connect to 10.10.10.3 port 3128: Timed out
