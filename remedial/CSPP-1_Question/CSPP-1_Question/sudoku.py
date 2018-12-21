@@ -21,7 +21,7 @@ def possibilities(mat):
                         res += each
                 print(res)
 
-def check_sudoku(sudoku):
+def checkSudoku(sudoku):
     if len(sudoku) == 9:
         row = 0
         for i in range(9):

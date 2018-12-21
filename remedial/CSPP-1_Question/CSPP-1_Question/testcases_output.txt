@@ -19,12 +19,7 @@ Expected Output:
 7
 
 Your Output: 
-Traceback (most recent call last):
-  File "sudoku.py", line 89, in <module>
-    main()
-  File "sudoku.py", line 81, in main
-    if (checkSudoku(grid)):
-NameError: name 'checkSudoku' is not defined
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -40,12 +35,7 @@ Expected Output:
 9
 
 Your Output: 
-Traceback (most recent call last):
-  File "sudoku.py", line 89, in <module>
-    main()
-  File "sudoku.py", line 81, in main
-    if (checkSudoku(grid)):
-NameError: name 'checkSudoku' is not defined
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -85,12 +75,7 @@ Expected Output:
 15
 
 Your Output: 
-Traceback (most recent call last):
-  File "sudoku.py", line 89, in <module>
-    main()
-  File "sudoku.py", line 81, in main
-    if (checkSudoku(grid)):
-NameError: name 'checkSudoku' is not defined
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -106,12 +91,7 @@ Expected Output:
 3
 
 Your Output: 
-Traceback (most recent call last):
-  File "sudoku.py", line 89, in <module>
-    main()
-  File "sudoku.py", line 81, in main
-    if (checkSudoku(grid)):
-NameError: name 'checkSudoku' is not defined
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -127,12 +107,7 @@ Expected Output:
 9
 
 Your Output: 
-Traceback (most recent call last):
-  File "sudoku.py", line 89, in <module>
-    main()
-  File "sudoku.py", line 81, in main
-    if (checkSudoku(grid)):
-NameError: name 'checkSudoku' is not defined
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -148,12 +123,7 @@ Expected Output:
 6
 
 Your Output: 
-Traceback (most recent call last):
-  File "sudoku.py", line 89, in <module>
-    main()
-  File "sudoku.py", line 81, in main
-    if (checkSudoku(grid)):
-NameError: name 'checkSudoku' is not defined
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -169,12 +139,7 @@ Expected Output:
 469
 
 Your Output: 
-Traceback (most recent call last):
-  File "sudoku.py", line 89, in <module>
-    main()
-  File "sudoku.py", line 81, in main
-    if (checkSudoku(grid)):
-NameError: name 'checkSudoku' is not defined
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -190,12 +155,7 @@ Expected Output:
 8
 
 Your Output: 
-Traceback (most recent call last):
-  File "sudoku.py", line 89, in <module>
-    main()
-  File "sudoku.py", line 81, in main
-    if (checkSudoku(grid)):
-NameError: name 'checkSudoku' is not defined
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -211,12 +171,7 @@ Expected Output:
 4
 
 Your Output: 
-Traceback (most recent call last):
-  File "sudoku.py", line 89, in <module>
-    main()
-  File "sudoku.py", line 81, in main
-    if (checkSudoku(grid)):
-NameError: name 'checkSudoku' is not defined
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -232,12 +187,7 @@ Expected Output:
 8
 
 Your Output: 
-Traceback (most recent call last):
-  File "sudoku.py", line 89, in <module>
-    main()
-  File "sudoku.py", line 81, in main
-    if (checkSudoku(grid)):
-NameError: name 'checkSudoku' is not defined
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -253,12 +203,7 @@ Expected Output:
 469
 
 Your Output: 
-Traceback (most recent call last):
-  File "sudoku.py", line 89, in <module>
-    main()
-  File "sudoku.py", line 81, in main
-    if (checkSudoku(grid)):
-NameError: name 'checkSudoku' is not defined
+Given sudoku is solved
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -369,17 +314,12 @@ Your Output:
 89
 ----------------------------------------
 
-########## Testcase 16: Failed ##########
+########## Testcase 16: Passed ##########
 Expected Output: 
 Invalid Sudoku:Duplicate values
 
 Your Output: 
-Traceback (most recent call last):
-  File "sudoku.py", line 89, in <module>
-    main()
-  File "sudoku.py", line 81, in main
-    if (checkSudoku(grid)):
-NameError: name 'checkSudoku' is not defined
+Invalid Sudoku:Duplicate values
 ----------------------------------------
 
 ########## Testcase 17: Failed ##########

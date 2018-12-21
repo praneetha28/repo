@@ -13,6 +13,7 @@ sudoku.py:10:0: C0111: Missing function docstring (missing-docstring)
 sudoku.py:14:12: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
 sudoku.py:16:16: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
 sudoku.py:18:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
+sudoku.py:24:0: C0103: Function name "checkSudoku" doesn't conform to snake_case naming style (invalid-name)
 sudoku.py:24:0: C0111: Missing function docstring (missing-docstring)
 sudoku.py:25:4: R1705: Unnecessary "else" after "return" (no-else-return)
 sudoku.py:30:8: R1705: Unnecessary "else" after "return" (no-else-return)
@@ -22,8 +23,7 @@ sudoku.py:48:12: C0103: Variable name "q" doesn't conform to snake_case naming s
 sudoku.py:54:0: C0111: Missing function docstring (missing-docstring)
 sudoku.py:60:12: C0103: Variable name "q" doesn't conform to snake_case naming style (invalid-name)
 sudoku.py:65:0: C0111: Missing function docstring (missing-docstring)
-sudoku.py:81:12: E0602: Undefined variable 'checkSudoku' (undefined-variable)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.58/10 (previous run: 6.58/10, +0.00)
+Your code has been rated at 7.11/10 (previous run: 6.58/10, +0.53)
 
