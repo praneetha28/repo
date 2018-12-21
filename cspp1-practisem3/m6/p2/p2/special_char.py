@@ -1,9 +1,9 @@
 "'# enter the input'"
-S = input()
-L = len(S)
-for i in S:
+s = input()
+L = len(s)
+s1 = ''
+for i in s:
     if i in '!@#$%^&*':
-        S1 = " "
-        print(S1)
-    else:
-        print(S)
+        i = " "
+    s1 += i
+print(str(s1))

@@ -29,11 +29,17 @@ def main():
         print("Invalid input")
     else:
         k = 0
+        count = 0
         for i in range(9):
             for j in range(9):
                 if input1[k] != '.':
                     grid[i][j] = input1[k]
+                else:
+                    count += 1
                 k += 1
+    if count == 9:
+        checkSudoku(grid)
+    else:
         possibilities(grid)
 
 if __name__ == '__main__':

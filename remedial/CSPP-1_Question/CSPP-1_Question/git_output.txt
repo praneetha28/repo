@@ -1,0 +1,6 @@
+[master d49f530] "cspp1_m10_a1_1: 12/25 testcases passed. Cannot run hidden testcases as Server is unreachablepylint score: 6/10 "
+ 4 files changed, 17 insertions(+), 45 deletions(-)
+ rewrite remedial/CSPP-1_Question/CSPP-1_Question/result/score.json (92%)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/praneetha28/repo.git
+   c6b6bd5..d49f530  master -> master
